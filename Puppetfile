@@ -37,9 +37,9 @@ github "boxen", "3.3.4"
 github "dnsmasq",    "1.0.0"
 github "foreman",    "1.0.0"
 github "gcc",        "2.0.1"
-github "git",        "1.2.5"
+github "git",        "1.3.5"
 github "go",         "1.0.0"
-github "homebrew",   "1.5.1"
+github "homebrew",   "1.6.0"
 github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",      "1.4.2"
@@ -55,3 +55,18 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+## custmize
+#
+github "osx",            "2.0.0"
+
+## local application
+github "iterm2",         "1.0.3"
+github "virtualbox",     "1.0.8"
+github "vagrant",        "2.0.14"
+github "sublime_text_2", "1.1.2"
+github "chrome",         "1.1.0"
+github "dropbox",        "1.1.2"
+github "alfred",         "1.1.6"
+github "onepassword",    "1.0.2"
+
