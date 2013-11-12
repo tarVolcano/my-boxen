@@ -15,11 +15,16 @@ class people::tarVolcano {
       'tree',
     ]:
   }
+  
   package {
     'Kobito':
       source   => "http://kobito.qiita.com/download/Kobito_v1.8.3.zip",
       provider => compressed_app;
-  }   
+    'onepassword':
+      source   => "https://d13itkw33a7sus.cloudfront.net/dist/1P/mac4/1Password-4.0.9.zip",
+      provider => compressed_app;
+  }
+  
 
   ###################
   # osxの設定(https://github.com/boxen/puppet-osx)

@@ -68,5 +68,3 @@ github "sublime_text_2", "1.1.2"
 github "chrome",         "1.1.0"
 github "dropbox",        "1.1.2"
 github "alfred",         "1.1.6"
-github "onepassword",    "1.0.2"
-
