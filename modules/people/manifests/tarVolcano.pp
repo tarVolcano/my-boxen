@@ -25,6 +25,13 @@ class people::tarVolcano {
       provider => compressed_app;
   }
   
+  # vagrantプラグイン
+  vagrant::plugin {
+    [
+      'vagrant-berkshelf',
+      'vagrant-omnibus',
+    ]:
+  }
 
   ###################
   # osxの設定(https://github.com/boxen/puppet-osx)
