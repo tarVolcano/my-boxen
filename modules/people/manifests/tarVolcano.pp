@@ -58,16 +58,18 @@ class people::tarVolcano {
   # osxの設定(https://github.com/boxen/puppet-osx)
   ###################
   # +------- global --------+
-  #include osx::global::enable_keyboard_control_access # ON :キーボードでのコントロール
+  include osx::global::enable_keyboard_control_access # ON :キーボードでのコントロール
   include osx::global::disable_autocorrect            # OFF:自動スペル補正
-  include osx::global::key_repeat_delay               # Set the default value (35)
-  #class { 'osx::global::key_repeat_delay':           # キーをおしっぱにして連続入力されるまでのdelay
-  #  delay => 10                                      # を10ミリ秒に
-  #}
-  include osx::global::key_repeat_rate                # Set the default value (0)
-  #class { 'osx::global::key_repeat_rate':            # キーを押しっぱなしにしてして連続入力される間隔
-  #  rate => 5                                        # を5ミリ秒に
-  #}
+
+  ## キーリピート設定はハンドでやるのでコメントアウト
+  # include osx::global::key_repeat_delay             # Set the default value (35)
+  # class { 'osx::global::key_repeat_delay':          # キーをおしっぱにして連続入力されるまでのdelay
+  #   delay => 10                                     # を10ミリ秒に
+  # }
+  # include osx::global::key_repeat_rate              # Set the default value (0)
+  # class { 'osx::global::key_repeat_rate':           # キーを押しっぱなしにしてして連続入力される間隔
+  #   rate => 5                                       # を5ミリ秒に
+  # }
 
 
   $home     = "/Users/${::boxen_user}"
